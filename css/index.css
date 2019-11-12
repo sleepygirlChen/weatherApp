@@ -1,0 +1,201 @@
+html,
+body {
+  height: 100%;
+  color: #fff;
+}
+
+body {
+  background: url(../images/bg9.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.weather {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.system-nav {
+  height: 22px;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.weather-nav {
+  height: .44rem;
+  background-color: rgba(255, 255, 255, .2);
+  padding: 0 .1rem;
+}
+
+.location-icon {
+  width: .2rem;
+  height: .2rem;
+  margin-top: .11rem;
+  background: url(../images/location.png) no-repeat center center;
+  background-size: cover;
+}
+
+.location-city {
+  width: .9rem;
+  line-height: .44rem;
+  font-size: .18rem;
+  color: #fff;
+  margin-left: .1rem;
+}
+
+.search-box {
+  width: calc(100% - 1.5rem);
+  margin-top: .07rem;
+  padding: 0 .15rem;
+  border-radius: .15rem;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .4) 100%);
+}
+
+.search-ipt {
+  width: calc(100% - .2rem);
+  height: .3rem;
+  font-size: .12rem;
+  color: #f2f2f2;
+}
+
+.search-ipt::placeholder {
+  color: #f2f2f2;
+}
+
+.search-icon {
+  width: .2rem;
+  height: .2rem;
+  margin-top: .05rem;
+  background: url(../images/search.png) no-repeat center center;
+  background-size: cover;
+}
+
+.weather-box {
+  margin-top: .3rem;
+  position: relative;
+  z-index: 1;
+  height: Calc(100% - 22px - .44rem);
+  overflow-y: auto;
+}
+
+
+.weather-today {
+  width: 3rem;
+  height: 2rem;
+  margin: 0 auto;
+  border-radius: .1rem;
+  box-shadow: 0 0 .3rem 0 rgba(255, 255, 255, .6) inset;
+  box-sizing: border-box;
+  padding: .28rem;
+  font-size: .14rem;
+
+}
+
+.week {
+  margin: 0 .3rem;
+}
+
+.tempture {
+  margin: .2rem 0;
+}
+
+.temp,
+.tem {
+  font-size: .5rem;
+}
+
+.tempture>span:nth-child(2) {
+  margin: 0 .25rem;
+}
+
+.air-wind>span:nth-child(2) {
+  margin: 0 .2rem;
+}
+
+.weather-current-hour {
+  margin-top: .3rem;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.title {
+  font-size: .14rem;
+  padding: .05rem .1rem;
+  border-bottom: 1px solid #fff;
+}
+
+.hours-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.hours-box {
+  width: 30rem;
+  height: 1.1rem;
+  padding: .1rem 0;
+  overflow: hidden;
+}
+
+.hour-item {
+  width: .85rem;
+  margin: 0 .2rem;
+  float: left;
+}
+
+.hour-item>p {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.hour-icon {
+  width: .2rem;
+  height: .2rem;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hour,
+.hour-icon,
+.hour-tem {
+  margin-bottom: .1rem;
+}
+
+.weather-future {
+  background-color: rgba(255, 255, 255, .3);
+  margin-top: .3rem;
+  font-size: .14rem;
+}
+
+.future-item {
+  padding: .2rem .1rem;
+  display: flex;
+  align-items: center;
+}
+
+.fu-icon {
+  width: .2rem;
+  height: .2rem;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 .5rem;
+}
+
+.fu-tem {
+  margin-right: auto;
+}
+
+.fu-wind {
+  width: .85rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
